@@ -4,66 +4,121 @@
   <meta charset="UTF-8">
   <title>BireBerber</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #f7f3ef;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f6f3ef;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       min-height: 100vh;
     }
-    .card {
-      background: white;
+
+    .container {
+      background: #fff;
+      max-width: 380px;
+      width: 100%;
       padding: 32px 24px;
-      border-radius: 20px;
+      border-radius: 22px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.08);
       text-align: center;
-      max-width: 360px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
-    img {
+
+    .logo {
       width: 180px;
       margin-bottom: 20px;
     }
+
     h1 {
       margin: 0;
       font-size: 26px;
+      color: #222;
     }
-    p {
-      color: #555;
-      line-height: 1.5;
+
+    .subtitle {
       margin-top: 12px;
+      color: #555;
+      font-size: 15px;
+      line-height: 1.6;
     }
-    .tag {
-      margin-top: 20px;
-      font-size: 14px;
+
+    .slogan {
+      margin-top: 18px;
+      font-weight: 600;
+      font-size: 15px;
+      color: #111;
+    }
+
+    .divider {
+      height: 1px;
+      background: #eee;
+      margin: 24px 0;
+    }
+
+    .links a {
+      display: block;
+      text-decoration: none;
+      background: #111;
+      color: #fff;
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: #333;
+    }
+
+    .footer {
+      margin-top: 18px;
+      font-size: 13px;
       color: #999;
     }
   </style>
 </head>
-<body>
-  <div class="card">
-    <img src="logo.png" alt="BireBerber Logo">
-    <h1>BireBerber</h1>
-    <p>
-      Berber, kuaför ve güzellik merkezlerini <br>
-      müşterilerle hızlı ve kolay şekilde buluşturuyoruz.
-    </p>
-    <div class="tag">
-      Mobil uygulama çok yakında
-    </div>
-    <div style="margin-top: 24px;">
-  <a href="https://www.instagram.com/bir.eberber" target="_blank"
-     style="display:block; text-decoration:none; color:#000; margin-bottom:10px;">
-    📸 Instagram’da bizi takip et
-  </a>
 
-  <a href="mailto:destek@bireberber.com"
-     style="display:block; text-decoration:none; color:#000;">
-    ✉️ destek@bireberber.com
-  </a>
-</div>
+<body>
+
+  <div class="container">
+    <!-- LOGO -->
+    <img src="logo.png" alt="BireBerber Logo" class="logo">
+
+    <!-- BAŞLIK -->
+    <h1>BireBerber</h1>
+
+    <!-- AÇIKLAMA -->
+    <div class="subtitle">
+      Berber, kuaför ve güzellik merkezleri için<br>
+      hızlı ve kolay randevu deneyimi.
+    </div>
+
+    <!-- SLOGAN -->
+    <div class="slogan">
+      Türkiye’nin her yerinden ücretsiz randevu,<br>
+      tek tıkla.
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- LİNKLER -->
+    <div class="links">
+      <a href="https://instagram.com/bireberber" target="_blank">
+        📸 Instagram’da bizi takip et
+      </a>
+
+      <a href="mailto:destek@bireberber.com">
+        ✉️ E-posta gönder
+      </a>
+    </div>
+
+    <div class="footer">
+      Mobil uygulama çok yakında 🚀
+    </div>
   </div>
+
 </body>
 </html>
